@@ -1,0 +1,129 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Django Authentification",
+    "collectionId": "447d7b46-9bb2-473a-9866-cc6b69d65935",
+    "dateExported": "2024-06-25T18:07:41.813Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "b07699c6-a9ba-49b9-8ef2-38cb4af708ea",
+            "name": "Users",
+            "containerId": "",
+            "created": "2024-06-24T21:41:35.451Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "63f6d787-03bb-48f3-8603-074fab7476b0",
+            "colId": "447d7b46-9bb2-473a-9866-cc6b69d65935",
+            "containerId": "b07699c6-a9ba-49b9-8ef2-38cb4af708ea",
+            "name": "Create User",
+            "url": "http://localhost:8000/api/v1/auth/users/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-24T21:43:08.913Z",
+            "modified": "2024-06-24T21:56:40.161Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"first_name\": \"LAmine\",\n  \"last_name\": \"Elheit\",\n  \"email\": \"meslamineelheit@gmail.com\",\n  \"password\": \"test123456789\",\n  \"re_password\": \"test123456789\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "024d989c-580c-42f3-99eb-9ede4e2a4692",
+            "colId": "447d7b46-9bb2-473a-9866-cc6b69d65935",
+            "containerId": "b07699c6-a9ba-49b9-8ef2-38cb4af708ea",
+            "name": "Login User",
+            "url": "http://localhost:8000/api/v1/auth/jwt/create/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-24T22:02:06.573Z",
+            "modified": "2024-06-24T22:07:05.959Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"meslamineelheit@gmail.com\",\n  \"password\": \"test123456789\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3448dc06-0efc-4d8e-90b2-30ad4cdb69ce",
+            "colId": "447d7b46-9bb2-473a-9866-cc6b69d65935",
+            "containerId": "b07699c6-a9ba-49b9-8ef2-38cb4af708ea",
+            "name": "Activate User",
+            "url": "http://localhost:8000/api/v1/auth/users/activation/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-24T22:04:24.104Z",
+            "modified": "2024-06-24T22:06:51.920Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"uid\": \"Mw\",\n  \"token\": \"c95eed-6534428de752a0c14ee8b1daf0fbf9f6\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ce875776-ddae-4023-89dc-af44459b5e80",
+            "colId": "447d7b46-9bb2-473a-9866-cc6b69d65935",
+            "containerId": "b07699c6-a9ba-49b9-8ef2-38cb4af708ea",
+            "name": "Password reset",
+            "url": "http://localhost:8000/api/v1/auth/users/reset_password/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-06-24T22:08:28.917Z",
+            "modified": "2024-06-24T22:10:44.774Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"meslamineelheit@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0d459a5a-cd84-4e35-855a-fd6f189f3f79",
+            "colId": "447d7b46-9bb2-473a-9866-cc6b69d65935",
+            "containerId": "b07699c6-a9ba-49b9-8ef2-38cb4af708ea",
+            "name": "Password Reset Confirm",
+            "url": "http://localhost:8000/api/v1/auth/users/reset_password_confirm/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-06-24T22:11:55.154Z",
+            "modified": "2024-06-24T22:13:26.115Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"uid\": \"Mw\",\n  \"token\": \"c95f1u-fc8456e637cadb2949b8a68555badee1\",\n  \"new_password\": \"test987654321\",\n  \"re_new_password\" :\"test987654321\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "SW7c28n7Hl1KWP7E2npOZk-hQLPFDWbLVhgEXobWquBTelFjbQWgsCqJywyw4iFF8CFCZVBLoiA2Vqe6MC8f1A"
+}
